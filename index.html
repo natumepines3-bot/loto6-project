@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ロト6 組み合わせ表</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <p class="eyebrow">LOTO 6 TOOL</p>
+  <h1 id="title">ロト6 組み合わせ表</h1>
+  <p id="subtitle">気になる数字を8〜10個えらぶと、6個ずつのすべての組み合わせが並びます。</p>
+</header>
+<main>
+  <section class="card">
+    <div class="status"><h2>1. 候補の数字をえらぶ</h2><span class="count"><b id="n">0</b> / <span id="max">10</span>個</span></div>
+    <div class="grid" id="grid"></div>
+    <div class="row"><button class="btn" id="clear" type="button">全部はずす</button></div>
+  </section>
+  <section class="card">
+    <div class="status"><h2>2. 組み合わせ一覧</h2><span class="count"><b id="total">0</b>通り</span></div>
+    <p class="msg" id="msg">数字を8個以上えらぶと、ここに一覧が出ます。</p>
+    <ol id="list"></ol>
+    <p class="hint">買いたい組み合わせにチェックを入れてください。</p>
+  </section>
+  <section class="card">
+    <div class="status"><h2>3. 選んだ組み合わせ</h2><span class="count"><b id="picked">0</b>口</span></div>
+    <p class="msg" id="pickedMsg">まだ選んでいません。</p>
+    <ol id="picks"></ol>
+    <div class="row"><button class="btn main" id="copy" type="button">コピーする</button><button class="btn" id="unpick" type="button">選択をリセット</button></div>
+    <p class="hint" id="copied" role="status"></p>
+  </section>
+</main>
+<footer>当せん確率はどの組み合わせでも同じです。無理のない範囲で楽しみましょう。</footer>
+<script src="script.js"></script>
+</body>
+</html>
