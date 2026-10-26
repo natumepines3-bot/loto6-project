@@ -55,3 +55,16 @@ li.sel{background:color-mix(in srgb,var(--accent) 12%,transparent)}
   padding:2px 0;font-size:.9rem}
 
 footer{text-align:center;color:var(--sub);font-size:.85rem;padding:0 16px 32px}
+.notice {
+  max-width: 900px;
+  margin: 32px auto;
+  padding: 16px 20px;
+  font-size: 0.85rem;
+  line-height: 1.7;
+  color: #667085;
+  text-align: center;
+}
+
+.notice p {
+  margin: 4px 0;
+}
